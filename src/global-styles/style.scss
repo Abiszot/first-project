@@ -1,0 +1,207 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import 'styles/normalize.scss';
+@import 'styles/root.scss';
+@import 'styles/fonts.scss';
+
+body {
+	background: #0f162d;
+	font-family: 'DM Sans';
+}
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	max-width: 1200px;
+	margin: 68px auto;
+	padding-inline: 40px;
+}
+
+.content {
+	display: flex;
+	padding-top: 90px;
+	justify-content: space-between;
+	width: 100%;
+}
+
+header {
+	display: flex;
+}
+
+.left-side {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 500px;
+}
+
+.left-section-title {
+	max-width: 467px;
+}
+.left-section-content {
+	max-width: 467px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+.right-side {
+	display: flex;
+	justify-content: center;
+}
+.right-section-button {
+	padding-left: 24px;
+}
+h1 {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 56px;
+	margin: 0;
+}
+p {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.square {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 268px;
+	height: 240px;
+	border-radius: 24px;
+	background: #272d42;
+	color: white;
+	padding: 10px;
+}
+.square p {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 20px ;
+	opacity: 0.5;
+	padding: 10px auto;
+}
+.square h2 {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	margin: initial;
+}
+.square img {
+	margin: auto;
+}
+
+.break {
+	height: 31px;
+}
+
+
+@media (max-width: 840px) {
+	.home-page{
+		width: 113%;
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		padding-top: 140px;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+	.left-side {
+		max-width: 830px;
+	}
+
+	.left-section-title {
+		max-width: 500px;
+	}
+	.left-section-content {
+		max-width: 500px;
+	}
+	nav {
+		padding-top: 15px;
+	}
+	.square {
+		width: 230px;
+		height: 215px;
+		border-radius: 20px;
+	}
+
+	.square h2 {
+		margin: initial;
+	}
+
+	.square p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.square img {
+		margin: auto;
+	}
+
+	.right-section-button {
+		padding-left: 16px;
+	}
+
+	.break {
+		height: 16px;
+	}
+}
+
+@media (max-width: 550px) {
+	section {
+		margin: -20px ;
+		.content {
+			padding-top: 80px;
+		}
+	}
+	h1 {
+		max-width: 100%;
+		font-family: 'DM Sans';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 31px;
+		line-height: 40px;
+		letter-spacing: -0.002em;
+	}
+	p {
+		font-size: 15px;
+	}
+	.home-page {
+		width: 90%;
+	}
+	.right-side {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.right-section-button {
+		padding: 16px;
+	}
+
+	.square {
+		width: 345px;
+		height: 196px;
+		border-radius: 20px;
+		margin: auto;
+		padding: 1px;
+	}
+}
